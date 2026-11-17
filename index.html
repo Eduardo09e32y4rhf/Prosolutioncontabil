@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Imposto de Renda 2027 e Contabilidade para MEI</title>
+<title>Oliveira &amp; Cirilo Assessoria Tributária | Imposto de Renda 2027 e MEI</title>
 <meta name="description" content="Orientação, elaboração e transmissão do Imposto de Renda 2027, com atendimento especializado para MEIs.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,14 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:co
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:50}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .logo{display:flex;align-items:center;gap:10px;font:700 1.15rem Sora,sans-serif;text-decoration:none}
-.logo i{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--p2),var(--pd));display:grid;place-items:center;color:#fff;font:700 1rem Sora}
+.logo i{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--p2),var(--pd));display:grid;place-items:center;color:#fff;font:700 .82rem Sora;font-style:normal}
+.logo .mark{width:42px;height:42px;flex:none;filter:drop-shadow(0 6px 12px rgba(109,40,217,.35))}
+.lt{display:grid;gap:3px;line-height:1}
+.lt b{font:700 1.08rem Sora,sans-serif;letter-spacing:-.01em}
+.lt small{font:600 .6rem Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--p2)}
+footer .lt small{color:#CDBDF5}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) header .lt small{color:#C4B5FD}}
+
 nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.95rem}
 nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--p)}
 @media (max-width:760px){nav{display:none}.nav{justify-content:center}}
@@ -122,10 +129,14 @@ nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--p)}
 .pro{padding:0}
 .photo{aspect-ratio:4/3;background:linear-gradient(160deg,var(--pm),var(--pl));display:grid;place-items:end center;overflow:hidden}
 .photo svg{width:62%;height:auto}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 .pro .in{padding:26px 28px 30px}
 .pro .r{color:var(--p);font-weight:600;margin:2px 0 10px;font-size:.95rem}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pro .r{color:#D9C8FF}}
 .pro p{margin:0 0 18px;color:var(--mut);font-size:.96rem}
+.edu{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:9px}
+.edu li{display:flex;gap:10px;align-items:flex-start;color:var(--mut);font-size:.95rem;line-height:1.45}
+.edu li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--p2);margin-top:.5em;flex:none}
 
 /* FAQ */
 .faq{max-width:800px}
@@ -150,22 +161,46 @@ input,select,textarea{font:500 1rem Inter,sans-serif;padding:14px 16px;border-ra
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--p2);box-shadow:0 0 0 4px rgba(124,58,237,.18)}
 @media (max-width:860px){.ct{grid-template-columns:1fr}}
 
-footer{background:var(--pd);color:#CDBDF5;padding:46px 0 30px;font-size:.93rem}
-footer .w{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
-footer b{color:#fff}
-footer small{display:block;width:100%;border-top:1px solid rgba(255,255,255,.14);padding-top:20px;opacity:.8}
+footer{background:var(--pd);color:#CDBDF5;font-size:.95rem;position:relative;overflow:hidden}
+footer::before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;left:-180px;bottom:-220px;background:radial-gradient(circle,rgba(167,139,250,.28),transparent 70%);pointer-events:none}
+footer .w{position:relative;z-index:1}
+footer a{text-decoration:none}
+.fcta{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;background:linear-gradient(135deg,var(--p2),#4C1D95);border:1px solid rgba(255,255,255,.18);border-radius:28px;padding:34px 38px;margin-top:56px;box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.fcta h2{font-size:clamp(1.4rem,3vw,2rem);color:#fff;font-weight:700;max-width:22ch}
+.fcta p{margin:8px 0 0;color:#E4D9FF}
+.fgrid{display:grid;gap:40px;grid-template-columns:1.4fr .8fr .9fr 1.2fr;padding:56px 0 40px}
+.fbrand .logo{color:#fff;margin-bottom:16px}
+.fbrand p{margin:0;max-width:34ch;line-height:1.6}
+footer h4{font:700 .82rem Sora,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#fff;margin:0 0 16px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+footer li a{color:#CDBDF5;transition:color .2s}footer li a:hover{color:#fff}
+.fct{display:grid;gap:12px}
+.fct a{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:12px 16px;color:#fff;transition:background .2s}
+.fct a:hover{background:rgba(255,255,255,.15)}
+.fct .ic{width:20px;height:20px;color:#25D366}
+.fct b{display:block;font:600 .95rem Sora,sans-serif}.fct small{color:#CDBDF5;font-size:.85rem}
+.fbot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding:22px 0 30px;font-size:.88rem}
+.fbot span{opacity:.85}
+.fbot a{display:inline-flex;align-items:center;gap:8px;color:#fff;font-weight:600}
+.fbot .ic{width:18px;height:18px}
+@media (max-width:900px){.fgrid{grid-template-columns:1fr 1fr}.fbrand{grid-column:1/-1}.fcta{padding:28px 24px}}
+@media (max-width:520px){.fgrid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bars .bar{animation:none}.btn{transition:none}}
 </style>
 </head>
 <body>
-<!-- EDITE: WhatsApp (55 + DDD + número) em 5511900000001 e 5511900000002; "Nome do Escritório"; CRC; formações. Fotos: troque os desenhos de .photo por <img src="data:..."> -->
+<!-- EDITE: Fotos: troque o src das <img> em .photo (ex.: fotos/anderson.jpg) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B0F8C"/></linearGradient></defs>
+  <symbol id="marca" viewBox="0 0 48 48"><rect width="48" height="48" rx="14" fill="url(#lg)"/><circle cx="18.5" cy="24" r="9" fill="none" stroke="#fff" stroke-width="4.5"/><path d="M34.4 17.6A9 9 0 1 0 34.4 30.4" fill="none" stroke="#DDD0FB" stroke-width="4.5" stroke-linecap="round"/></symbol>
+</svg>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="pessoa" viewBox="0 0 200 200"><path d="M20 200c0-46 36-74 80-74s80 28 80 74z" fill="currentColor"/><path d="M84 118h32v22q-16 10-32 0z" fill="#E9B896"/><circle cx="100" cy="86" r="38" fill="#F2C9A8"/><path d="M62 82c0-30 20-46 40-46s38 14 38 42c-10-14-24-20-40-20s-28 8-38 24z" fill="#2E1065"/></symbol>
 </svg>
 
 <header>
   <div class="w nav">
-    <a class="logo" href="#topo"><i>C</i>Nome do Escritório</a>
+    <a class="logo" href="#topo"><svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#marca"/></svg><span class="lt"><b>Oliveira &amp; Cirilo</b><small>Assessoria Tributária</small></span></a>
     <nav aria-label="Principal"><ul>
       <li><a href="#servicos">Serviços</a></li><li><a href="#mei">MEI</a></li><li><a href="#como">Como funciona</a></li><li><a href="#equipe">Equipe</a></li><li><a href="#faq">Dúvidas</a></li><li><a href="#contato">Contato</a></li>
     </ul></nav>
@@ -268,10 +303,39 @@ footer small{display:block;width:100%;border-top:1px solid rgba(255,255,255,.14)
 
 <section id="equipe">
   <div class="w">
-    <div class="head"><h2>Conheça quem cuida do seu caso</h2><p>Profissionais com formação na área e compromisso com o seu resultado.</p></div>
+    <div class="head"><h2>Conheça quem cuida do seu caso</h2><p>Profissionais com formação sólida na área e compromisso com o seu resultado.</p></div>
     <div class="team">
-      <article class="card pro"><div class="photo" style="color:#6D28D9"><svg viewBox="0 0 200 200" role="img" aria-label="Foto de Anderson"><use href="#pessoa"/></svg></div><div class="in"><h3>Anderson [sobrenome]</h3><div class="r">[Formação, ex.: Ciências Contábeis | CRC-SP 000000]</div><p>[Breve apresentação: experiência e especialidades.]</p><a class="btn b4" href="https://wa.me/5511900000001" target="_blank" rel="noopener">Falar com Anderson</a></div></article>
-      <article class="card pro"><div class="photo" style="color:#4C1D95"><svg viewBox="0 0 200 200" role="img" aria-label="Foto de Reinaldo"><use href="#pessoa"/></svg></div><div class="in"><h3>Reinaldo [sobrenome]</h3><div class="r">[Formação, ex.: Ciências Contábeis | CRC-SP 000000]</div><p>[Breve apresentação: experiência e especialidades.]</p><a class="btn b4" href="https://wa.me/5511900000002" target="_blank" rel="noopener">Falar com Reinaldo</a></div></article>
+      <article class="card pro">
+        <div class="photo"><!-- TROCAR FOTO: coloque a imagem em fotos/anderson.jpg e use src="fotos/anderson.jpg" --><img src="https://i.pravatar.cc/600?img=12" alt="Foto de Anderson Oliveira" loading="lazy"></div>
+        <div class="in">
+          <h3>Anderson Oliveira</h3>
+          <div class="r">Formação acadêmica</div>
+          <ul class="edu">
+            <li>Bacharelado em Ciências Contábeis</li>
+            <li>Tecnólogo em Gestão Financeira</li>
+            <li>MBA em Direito Empresarial e Direito Tributário</li>
+            <li>Especialização em Auditoria e Perícia Contábil</li>
+            <li>Especialização em Comércio Exterior</li>
+            <li>Mestrado em Administração e Finanças Corporativas</li>
+          </ul>
+          <a class="btn b4" href="https://wa.me/5515998216626" target="_blank" rel="noopener">Falar com Anderson</a>
+        </div>
+      </article>
+      <article class="card pro">
+        <div class="photo"><!-- TROCAR FOTO: coloque a imagem em fotos/reginaldo.jpg e use src="fotos/reginaldo.jpg" --><img src="https://i.pravatar.cc/600?img=15" alt="Foto de Reginaldo Cirilo" loading="lazy"></div>
+        <div class="in">
+          <h3>Reginaldo Cirilo</h3>
+          <div class="r">Formação acadêmica</div>
+          <ul class="edu">
+            <li>Bacharelado em Administração</li>
+            <li>Bacharelado em Ciências Contábeis</li>
+            <li>Especialização em Imposto de Renda</li>
+            <li>Especialização em Docência do Ensino Superior e Técnico</li>
+            <li>MBA em Auditoria e Perícia Contábil</li>
+          </ul>
+          <a class="btn b4" href="https://wa.me/5518991518688" target="_blank" rel="noopener">Falar com Reginaldo</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -294,15 +358,15 @@ footer small{display:block;width:100%;border-top:1px solid rgba(255,255,255,.14)
       <h2>Solicite seu atendimento</h2>
       <p class="lead">Escolha um profissional e fale agora pelo WhatsApp, ou preencha o formulário.</p>
       <div class="pc">
-        <div><span><b>Anderson</b><small>WhatsApp</small></span><a class="btn b4" href="https://wa.me/5511900000001" target="_blank" rel="noopener">Chamar</a></div>
-        <div><span><b>Reinaldo</b><small>WhatsApp</small></span><a class="btn b4" href="https://wa.me/5511900000002" target="_blank" rel="noopener">Chamar</a></div>
+        <div><span><b>Anderson Oliveira</b><small>WhatsApp: (15) 99821-6626</small></span><a class="btn b4" href="https://wa.me/5515998216626" target="_blank" rel="noopener">Chamar</a></div>
+        <div><span><b>Reginaldo Cirilo</b><small>WhatsApp: (18) 99151-8688</small></span><a class="btn b4" href="https://wa.me/5518991518688" target="_blank" rel="noopener">Chamar</a></div>
       </div>
     </div>
     <form id="f">
       <h3>Fale com um especialista</h3>
       <label>Nome<input name="nome" required autocomplete="name"></label>
       <label>Seu perfil<select name="perfil"><option>Pessoa física</option><option>MEI</option><option>Empresa</option></select></label>
-      <label>Atendimento com<select name="pro"><option value="5511900000001">Anderson</option><option value="5511900000002">Reinaldo</option></select></label>
+      <label>Atendimento com<select name="pro"><option value="5515998216626">Anderson Oliveira</option><option value="5518991518688">Reginaldo Cirilo</option></select></label>
       <label>Como podemos ajudar?<textarea name="msg" rows="3" placeholder="Ex.: preciso declarar o IR 2027"></textarea></label>
       <button class="btn b1" type="submit">Enviar pelo WhatsApp</button>
     </form>
@@ -312,9 +376,39 @@ footer small{display:block;width:100%;border-top:1px solid rgba(255,255,255,.14)
 
 <footer>
   <div class="w">
-    <div><b>Nome do Escritório</b><br>Contabilidade e Imposto de Renda<br>CRC-SP 000000</div>
-    <div><b>Contato</b><br>Anderson: (11) 90000-0001<br>Reinaldo: (11) 90000-0002</div>
-    <small>© 2027 Nome do Escritório. Todos os direitos reservados.</small>
+    <div class="fcta">
+      <div><h2>Não deixe o Imposto de Renda para a última hora</h2><p>Fale agora com um especialista e receba a lista de documentos.</p></div>
+      <a class="btn b4" href="#contato">Solicitar atendimento</a>
+    </div>
+    <div class="fgrid">
+      <div class="fbrand">
+        <a class="logo" href="#topo"><svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#marca"/></svg><span class="lt"><b>Oliveira &amp; Cirilo</b><small>Assessoria Tributária</small></span></a>
+        <p>Orientação, elaboração e transmissão do Imposto de Renda, com atendimento especializado para MEIs e profissionais com formação em contabilidade e tributos.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li><li><a href="#mei">MEI</a></li><li><a href="#como">Como funciona</a></li><li><a href="#equipe">Equipe</a></li><li><a href="#faq">Dúvidas</a></li><li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Imposto de Renda 2027</a></li><li><a href="#mei">Serviços para MEI</a></li><li><a href="#servicos">Abertura de empresa</a></li><li><a href="#servicos">Contabilidade mensal</a></li><li><a href="#servicos">Regularização fiscal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Fale conosco</h4>
+        <div class="fct">
+          <a href="https://wa.me/5515998216626" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12Z"/></svg><span><b>Anderson Oliveira</b><small>(15) 99821-6626</small></span></a>
+          <a href="https://wa.me/5518991518688" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12Z"/></svg><span><b>Reginaldo Cirilo</b><small>(18) 99151-8688</small></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2027 Oliveira &amp; Cirilo Assessoria Tributária. Todos os direitos reservados.</span>
+      <a href="#topo">Voltar ao topo <svg class="ic" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+    </div>
   </div>
 </footer>
 
